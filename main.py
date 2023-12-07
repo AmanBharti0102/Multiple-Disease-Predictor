@@ -1,7 +1,7 @@
 """
 @author
 Aman Bharti
-IIT (ISM) Dhanbad-3rd year
+IIT (ISM) Dhanbad-Final year
 
 """
 
@@ -12,9 +12,10 @@ import sklearn
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('diabetes_model.pkl','rb'))
-heart_disease_model = pickle.load(open('heart_disease_model.pkl','rb'))
-parkinsons_model = pickle.load(open('parkinsons_model.pkl','rb'))
+diabetes_model = pickle.load(open('saved models/diabetes_model.pkl','rb'))
+heart_disease_model = pickle.load(open('saved models/heart_disease_model.pkl','rb'))
+parkinsons_model = pickle.load(open('saved models/parkinsons_model.pkl','rb'))
+
 
 #bg image
 def add_bg_from_url():
@@ -34,7 +35,7 @@ def add_bg_from_url():
 add_bg_from_url()
 #bg img
 # <a href="https://ibb.co/dGrbSCz"><img src="https://i.ibb.co/f428b6P/anatomical-2261006.jpg" alt="anatomical-2261006" border="0"></a>
-
+st.header('Kindly fill the details with appropriate values')
 with st.sidebar:
     selected = option_menu('Multiple Disease Prediction System',
 
@@ -48,7 +49,7 @@ with st.sidebar:
 if (selected == 'Diabetes Prediction'):
 
     # page title
-    st.title('Diabetes Prediction using ML')
+    st.title('Diabetes Prediction')
 
     # getting the input data from the user
     col1, col2, col3 = st.columns(3)
@@ -94,10 +95,23 @@ if (selected == 'Diabetes Prediction'):
     st.success(diab_diagnosis)
 
 # Heart Disease Prediction Page
+# age
+# sex
+# cp
+# trestbps
+# chol
+# fbs
+# restecg
+# thalach
+# exang
+# oldpeak
+# slope
+# ca
+# thal
 if (selected == 'Heart Disease Prediction'):
 
     # page title
-    st.title('Heart Disease Prediction using ML')
+    st.title('Heart Disease Prediction')
 
     col1, col2, col3 = st.columns(3)
 
@@ -160,7 +174,7 @@ if (selected == 'Heart Disease Prediction'):
 if (selected == "Parkinsons Prediction"):
 
     # page title
-    st.title("Parkinson's Disease Prediction using ML")
+    st.title("Parkinson's Disease Prediction")
 
     col1, col2, col3, col4, col5 = st.columns(5)
 
@@ -245,3 +259,17 @@ if (selected == "Parkinsons Prediction"):
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
 
     st.success(parkinsons_diagnosis)
+
+st.markdown("<br><br>", unsafe_allow_html=True)
+
+# Add name and contact details at the bottom
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <p>Author: Aman Bharti</p>
+        <p>Contact Info: 20je0102@ece.iitism.ac.in</p>
+    </div>
+    """
+    ,
+    unsafe_allow_html=True
+)

@@ -50,6 +50,6 @@ The system will provide predictions for diabetes, heart disease, and Parkinson's
 
 The system utilizes pre-trained machine learning models for disease prediction. These models have been trained on relevant datasets to ensure accuracy.
 
-Diabetes Prediction Model
-Heart Disease Prediction Model
-Parkinson's Disease Prediction Model
+1.Diabetes Prediction Model
+2.Heart Disease Prediction Model
+3.Parkinson's Disease Prediction Model

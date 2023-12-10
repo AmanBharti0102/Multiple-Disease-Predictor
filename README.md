@@ -51,5 +51,13 @@ The system will provide predictions for diabetes, heart disease, and Parkinson's
 The system utilizes pre-trained machine learning models for disease prediction. These models have been trained on relevant datasets to ensure accuracy.
 
 1.Diabetes Prediction Model
+
 2.Heart Disease Prediction Model
+
 3.Parkinson's Disease Prediction Model
+
+## Examples
+![Screenshot (69)](https://github.com/AmanBharti0102/Multiple-Disease-Predictor/assets/85895314/13794ba2-aa1a-4c0c-967d-89b5754439ef)
+![Screenshot (67)](https://github.com/AmanBharti0102/Multiple-Disease-Predictor/assets/85895314/829d2814-f06a-46bc-b79f-56d63b9c97ba)
+
+
